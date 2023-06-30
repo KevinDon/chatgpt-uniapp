@@ -1,11 +1,11 @@
 
-const BASE_URL = 'http://175.178.233.9:9569'
+const BASE_URL = 'http://tt.huohuazuji.com:7071'
 const request = ({
 	url,
 	data = {},
 	method = 'get',
 	header = {
-		ContentType:'application/json' 
+		ContentType:'application/json'
 	},
 }) => {
 	let token = uni.getStorageSync('token') || '';
@@ -56,8 +56,8 @@ const request = ({
 							url:'/pages/login/login'
 						});
 					// #endif
-				
-				
+
+
 				}else{
 					uni.showToast({
 						title:res.data.msg,
